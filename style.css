@@ -1,0 +1,109 @@
+:root{
+     --black: #222222;
+}
+html {
+    
+    box-sizing: border-box;
+   
+}
+
+body {
+    color: var(--black);
+    font-size: 15px;
+    font-family: "Ubuntu", sans-serif;
+    min-height: calc(100vh - 100px);
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1440px 1fr;
+  
+}
+
+.wrapper {
+    grid-column: 2;
+    display: flex;
+    flex-direction: column;
+    grid-gap: 20px;
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.2),
+    0 6px 20px 5px rgba(0, 0, 0, 0.4);
+}
+
+.top {
+    position: relative;
+    display: grid;
+    padding: 60px;
+    grid-gap: 20px;
+    grid-template-columns: 2fr 1fr 2fr; 
+    grid-template-rows: 50px 3fr 50px 50px;  
+    justify-items: center;    
+    background: linear-gradient(to right,rgba(255, 255, 255, 0.6) 60%, rgba(186, 85, 211, 0.6 ) 60%), url(https://images.wallpaperscraft.com/image/computer_keyboard_mouse_laptop_mac_apple_66734_1920x1080.jpg);
+    background-size: cover;
+    min-height: 600px;
+}
+
+.hero{
+    grid-row: 2;
+    
+}
+
+.hero h1{
+    font-size: 96px;
+    font-weight: bold;
+}
+
+.nav{
+    grid-column: 3;
+    grid-row: 1;
+    justify-self: end;
+    display: flex;
+}
+.nav>a{
+    text-decoration: none;
+    color: white;
+    margin-left: 48px;
+    font-weight: bold;
+    font-size: 18px;
+
+}
+
+#useful{
+    color: white;    
+    grid-column: 3;
+    grid-row: 3;
+    justify-self: end;
+    align-self: end;
+    font-size: 14px;
+    border-bottom: 1px solid white;
+    width: 110px;
+    text-align: right;
+    padding: 3px;
+    margin-right:8px;
+
+}
+
+.links{
+    color: white;
+    font-size: 35px;
+    grid-column: 3;
+    grid-row: 4;
+    justify-self: end;
+    align-self: end;
+    display: flex;
+}
+
+.links > a {
+    margin-left: 10px;
+    text-decoration: none;
+    color: inherit;
+
+}
+
+.avatar{
+    position: absolute;
+    top: 25%;
+    right: calc(40% - 140px);
+    height: auto;
+    width: 280px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.2),
+    0 6px 20px 5px rgba(0, 0, 0, 0.19);
+}
