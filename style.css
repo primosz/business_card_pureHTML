@@ -707,10 +707,12 @@ body {
     font-size: 1.125em;
     color: #A0A0A0;
     padding: 30px 50px;
+    min-height: 35px;
     position: relative;
     -webkit-appearance: textarea;
-
-
+}
+.form:focus {
+    outline: none;
 }
 
 .slideR {
@@ -1054,8 +1056,21 @@ body {
         background: linear-gradient(to right, rgba(255, 255, 255, 0.6) 100%, rgba(186, 85, 211, 0.3) 100%),
             url(background.jpg);
     }
+ .contactForm {
+     grid-template-columns: 1fr 0fr;
+     padding: 0px;
+     margin: 0px;
+     grid-gap: 0px;
+     width: 100%;
 
+ }
+ .right {
+     grid-column: 1;
+ }
 
+ .left {
+     grid-column: 1;
+ }
     body {
         font-size: 12px;
     }
